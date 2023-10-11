@@ -31,7 +31,7 @@ func (h *home) Index(c echo.Context) error {
 
 func (h *home) ApiIndex(c echo.Context) error {
 	response := _type.ResponseDto{
-		Message: "This is Mesh-UAT-Go-One Api",
+		Message: "This is Mesh-UAT-Go-One Canary Api",
 		Data:    nil,
 	}
 
@@ -44,7 +44,7 @@ func (h *home) Health(c echo.Context) error {
 
 func (h *home) HelloApiOne(c echo.Context) error {
 	response := _type.ResponseDto{
-		Message: "Hello From Mesh-UAT-Go-One API One",
+		Message: "Hello From Mesh-UAT-Go-One Canary API One",
 		Data:    nil,
 	}
 
@@ -53,7 +53,7 @@ func (h *home) HelloApiOne(c echo.Context) error {
 
 func (h *home) HelloApiTwo(c echo.Context) error {
 	response := _type.ResponseDto{
-		Message: "Hello From Mesh-UAT-Go-One API Two",
+		Message: "Hello From Mesh-UAT-Go-One Canary API Two",
 		Data:    nil,
 	}
 
