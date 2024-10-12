@@ -10,6 +10,7 @@ RUN go build -o /app/bin/mesh-uat-go-one .
 
 
 FROM quay.io/klovercloud/golang:1.20
+RUN apt-get update && apt-get install -y curl iputils-ping && apt-get clean
 
 RUN useradd -ms /bin/bash klovercloud
 WORKDIR /home/klovercloud

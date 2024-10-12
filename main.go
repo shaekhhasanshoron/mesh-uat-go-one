@@ -24,6 +24,7 @@ func main() {
 	renderer := &TemplateRenderer{
 		templates: template.Must(template.ParseGlob("./views/*.html")),
 	}
+
 	srv.Renderer = renderer
 	router.Routes(srv)
 	srv.Logger.Fatal(srv.Start(":" + config.ServerPort))

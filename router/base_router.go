@@ -6,6 +6,7 @@ import (
 )
 
 func Routes(e *echo.Echo) {
+	e.GET("", api.MeshApi().Index)
 	e.GET("/", api.MeshApi().Index)
 	e.GET("/api", api.MeshApi().ApiIndex)
 	e.GET("/health", api.MeshApi().Health)

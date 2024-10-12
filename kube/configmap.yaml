@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: mesh-uat-go-one
+  name: mesh-uat-go-one-envar-config
+  namespace: klovercloud
+data:
+  RUN_MODE: PRODUCTION
+  SERVER_PORT: "8080"
+  MESH_UAT_GO_TWO_ENDPOINT: "http://mesh-uat-go-two.klovercloud.svc.cluster.local"
